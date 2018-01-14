@@ -5,8 +5,8 @@
     <description>Use advanced succ and blow procedures to turn into a phsycoactive drug!</description>
     <jobString>Succing on Angiosperms.</jobString>
     <workAmount>450</workAmount>
-    <effectWorking>ButcherFlesh</effectWorking>
-    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
     <ingredients>
       <li>
         <filter>
@@ -19,6 +19,7 @@
     </ingredients>
     <products>
       <HappyPill>1</HappyPill>
+      <CornCob>5</CornCob>
     </products>
   </RecipeDef>
 </Defs>

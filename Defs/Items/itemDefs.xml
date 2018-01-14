@@ -1,0 +1,30 @@
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>CornCob</defName>
+    <label>corn cob</label>
+    <description>The cob of an ear of corn. Why is the corn gone?</description>
+    <graphicData>
+      <texPath>Things/Items</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -31,7 +31,7 @@
       <chairSearchRadius>100</chairSearchRadius>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>HappyPillHigh</hediffDef>
+          <hediffDef>BasicHappyPillHigh</hediffDef>
           <severity>1</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -54,49 +54,17 @@
     </comps>
   </ThingDef>
 
-  <HediffDef>
-    <defName>HappyPillHigh</defName>
-    <hediffClass>HediffWithComps</hediffClass>
-    <label>Bare happy pills</label>
-    <labelNoun>Bare happy pills</labelNoun>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.9</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.10</offset>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <offset>0.25</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>10.0</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
 
+  <!-- ChemicalDefs -->
   <ChemicalDef>
     <defName>HappyPill</defName>
     <label>Happy Pill</label>
   </ChemicalDef>
 
   <ThoughtDef>
-    <defName>HappyPillHigh</defName>
+    <defName>BasicHappyPillHigh</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>HappyPillHigh</hediff>
+    <hediff>BasicHappyPillHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
