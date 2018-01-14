@@ -1,0 +1,16 @@
+<Defs>
+  <WorkGiverDef>
+    <defName>MakeCornPills</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <label>Happy Pill Synthesis</label>
+    <workType>Crafting</workType>
+    <verb>Synthesise</verb>
+    <gerund>utilising</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <fixedBillGiverDefs>
+      <li>TableCornProduction</li>
+    </fixedBillGiverDefs>
+  </WorkGiverDef>
+</Defs>

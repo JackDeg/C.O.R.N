@@ -1,0 +1,24 @@
+<Defs>
+  <RecipeDef>
+    <defName>MakeCornPill</defName>
+    <label>synthesise happy pill</label>
+    <description>Use advanced succ and blow procedures to turn into a phsycoactive drug!</description>
+    <jobString>Succing on Angiosperms.</jobString>
+    <workAmount>450</workAmount>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <HappyPill>1</HappyPill>
+    </products>
+  </RecipeDef>
+</Defs>

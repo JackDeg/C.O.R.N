@@ -1,0 +1,27 @@
+<Defs>
+  <ResearchProjectDef>
+    <defName>CornRefining</defName>
+    <label>Basic Corn Refining</label>
+    <description>Scientists have discovered the very basics of corn based drugs!</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Tier2CornRefining</defName>
+    <label>Advanced Corn Refining</label>
+    <description>Scientists have discovered that combining various drugs with corn will produce wonderous improvements on the drug!</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>CornRefining</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>
