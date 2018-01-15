@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="DrugPillBase">
     <defName>HappyPill</defName>
-    <label>Happy Pill</label>
+    <label>Crude Happy Pill</label>
     <description>An highly compressed corn.</description>
     <graphicData>
       <texPath>Things/Item/Drug/Penoxycyline</texPath>

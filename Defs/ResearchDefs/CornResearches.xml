@@ -37,7 +37,21 @@
   <ResearchProjectDef>
     <defName>CobCompression</defName>
     <label>Corncob Compression</label>
-    <description>Your colonists have figured out how to compress corn cobs into a biological building material... However it's not very strong</description>
+    <description>Your colonists have figured out how to compress corn cobs into a biological building material. However, it's not very strong.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>CornRefining</li>
+    </prerequisites>
+    <tab>CornRTab</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>T2CobCompression</defName>
+    <label>Corncob Compound</label>
+    <description>Your colonists have figured out how to combine corn and steel to make a much stronger building material.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

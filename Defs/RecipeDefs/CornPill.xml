@@ -14,12 +14,36 @@
             <li>RawCorn</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
       <HappyPill>1</HappyPill>
-      <CornCob>5</CornCob>
+      <CornCob>2</CornCob>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeCornPaste</defName>
+    <label>macerate cobs</label>
+    <description>Using advanced pestle and mortar techniques, you can create a corn cob paste!</description>
+    <jobString>macerating cobs.</jobString>
+    <workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>CobCompression</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CornCob</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CornCobPaste>15</CornCobPaste>
     </products>
   </RecipeDef>
 </Defs>

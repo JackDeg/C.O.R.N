@@ -66,6 +66,7 @@
     </researchPrerequisites>
     <recipes>
       <li>MakeCornPill</li>
+      <li>MakeCornPaste</li>
     </recipes>
   </ThingDef>
 </Defs>
