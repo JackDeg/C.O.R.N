@@ -55,10 +55,10 @@
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>CornRefining</li>
+      <li>CobCompression</li>
     </prerequisites>
     <tab>CornRTab</tab>
-    <researchViewX>2</researchViewX>
+    <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 </Defs>

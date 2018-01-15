@@ -67,6 +67,7 @@
     <recipes>
       <li>MakeCornPill</li>
       <li>MakeCornPaste</li>
+      <li>MakeCornCompound</li>
     </recipes>
   </ThingDef>
 </Defs>

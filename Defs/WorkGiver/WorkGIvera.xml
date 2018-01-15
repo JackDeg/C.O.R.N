@@ -13,7 +13,7 @@
       <li>TableCornProduction</li>
     </fixedBillGiverDefs>
   </WorkGiverDef>
-  
+
   <WorkGiverDef>
     <defName>MakeCornPaste</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
@@ -21,6 +21,21 @@
     <workType>Crafting</workType>
     <verb>Macerate</verb>
     <gerund>macerating</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <fixedBillGiverDefs>
+      <li>TableCornProduction</li>
+    </fixedBillGiverDefs>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>MakeCornCompound</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <label>combine cobs</label>
+    <workType>Crafting</workType>
+    <verb>Compound</verb>
+    <gerund>Compounding</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

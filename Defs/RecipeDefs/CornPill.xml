@@ -26,7 +26,7 @@
   <RecipeDef>
     <defName>MakeCornPaste</defName>
     <label>macerate cobs</label>
-    <description>Using advanced pestle and mortar techniques, you can create a corn cob paste!</description>
+    <description>Using various pestle and mortar techniques, you can create a corn cob paste!</description>
     <jobString>macerating cobs.</jobString>
     <workAmount>1000</workAmount>
     <effectWorking>Cook</effectWorking>
@@ -39,11 +39,43 @@
             <li>CornCob</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>6</count>
       </li>
     </ingredients>
     <products>
-      <CornCobPaste>15</CornCobPaste>
+      <CornCobPaste>18</CornCobPaste>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeCornCompound</defName>
+    <label>combine cobs</label>
+    <description>Using highly advanced pestle and mortar techniques, you can create a steel-cob compound!</description>
+    <jobString>combining cobs.</jobString>
+    <workAmount>1000</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>T2CobCompression</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CornCobPaste</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <CornCompound>10</CornCompound>
     </products>
   </RecipeDef>
 </Defs>
