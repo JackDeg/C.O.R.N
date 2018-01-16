@@ -1,2 +1,3 @@
 # C.O.R.N
-Corn mod vnoice
+Widely expands the uses for corn!
+This branch (master) contains the first version of the mod for B18!
