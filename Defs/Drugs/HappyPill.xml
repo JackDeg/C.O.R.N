@@ -31,7 +31,7 @@
       <chairSearchRadius>100</chairSearchRadius>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>BasicHappyPillHigh</hediffDef>
+          <hediffDef>HappyPillHigh</hediffDef>
           <severity>1</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -62,9 +62,9 @@
   </ChemicalDef>
 
   <ThoughtDef>
-    <defName>BasicHappyPillHigh</defName>
+    <defName>HappyPillHigh</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>BasicHappyPillHigh</hediff>
+    <hediff>HappyPillHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>

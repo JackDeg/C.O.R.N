@@ -1,6 +1,6 @@
 <Defs>
   <HediffDef>
-    <defName>BasicHappyPillHigh</defName>
+    <defName>HappyPillHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Bare happy pills</label>
     <labelNoun>Bare happy pills</labelNoun>
