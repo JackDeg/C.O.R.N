@@ -65,7 +65,6 @@
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -111,7 +110,6 @@
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
