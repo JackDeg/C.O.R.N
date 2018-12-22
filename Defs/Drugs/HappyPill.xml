@@ -15,6 +15,7 @@
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
+      <joyKind>Chemical</joyKind>
       <joy>0.50</joy>
       <drugCategory>Medical</drugCategory>
       <foodType>Processed, Fluid</foodType>

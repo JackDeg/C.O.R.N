@@ -78,4 +78,32 @@
       <CornCompound>10</CornCompound>
     </products>
   </RecipeDef>
+
+  <RecipeDef>
+    <defName>StripCorn</defName>
+    <label>strip corn</label>
+    <description>Strip the cob of its corn. In the sexy way.</description>
+    <jobString>stripping.</jobString>
+    <workAmount>40</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>CobCompression</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CornCob>1</CornCob>
+    </products>
+    <recipeUsers>
+      <li>ButcherSpot</li>
+      <li>TableButcher</li>
+    </recipeUsers>
+  </RecipeDef>
 </Defs>
