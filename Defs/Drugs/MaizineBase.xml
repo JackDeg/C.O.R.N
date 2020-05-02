@@ -1,0 +1,69 @@
+<Defs>
+	<!--Basic Corn Based Drug Chemical and Hediffs-->
+	<ChemicalDef>
+		<defName>Maizine</defName>
+		<label>Maizine</label>
+		<addictionHediff>MaizineAddiction</addictionHediff>
+		<toleranceHediff>MaizineTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Maizine</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>maizine</label>
+		<description>Because of an maizine addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>20</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>MaizineTolerance</defName>
+		<label>maizine tolerance</label>
+		<description>A built-up tolerance to maizine based drugs. The more severe this tolerance is, the more of these drugs it will take to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.020</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Maizine</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>MaizineAddiction</defName>
+		<label>maizine addiction</label>
+		<description>A chemical addiction to maizine. Long-term presence of maizine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of maizine, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>Chemical_Maizine</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li></li>
+			<li>
+				<label>withdrawal</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>MaizineWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>MaizineAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>maizine withdrawal</label>
+				<description>I've never felt such bitter, unforgiving pain... I didn't think I'd ever want a piece of veg so much.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

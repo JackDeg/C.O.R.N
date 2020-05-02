@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Adv Happy Pill-->
+	<ThingDef ParentName="DrugPillBase">
+		<defName>AdvHappyPill</defName>
+		<label>advanced happy pill</label>
+		<description>A better, cleaner happy pill. Purified with the mechanites from luciferium, it provides a fantastic mood boost with little risk of addiction or overdose.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AdvHappyPillHigh</HediffDef>
+			<HediffDef>MaizineTolerance</HediffDef>
+			<HediffDef>MaizineAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Drug/Penoxycyline</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.1</Mass>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<baseIngestTicks>100</baseIngestTicks>
+			<joyKind>Chemical</joyKind>
+			<joy>0.5</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AdvHappyPillHigh</hediffDef>
+					<severity>0.10</severity>
+					<toleranceChemical>Maizine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MaizineTolerance</hediffDef>
+					<severity>0.010</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>Maizine</chemical>
+				<addictiveness>0.20</addictiveness>
+				<minToleranceToAddict>0.20</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.01</existingAddictionSeverityOffset>
+				<needLevelOffset>1</needLevelOffset>
+				<listOrder>50</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>AdvHappyPillHigh</defName>
+		<label>high on corn</label>
+		<description>Pure maizine in the bloodstream. Just bliss.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.48</severityPerDay>
+			</li>
+		</comps>
+		<stages><li></li></stages>
+	</HediffDef>
+
+	<!-- ThoughtDefs -->	
+	<ThoughtDef>
+		<defName>AdvHappyPillHigh</defName>
+    	<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AdvHappyPillHigh</hediff>
+		<stages>
+			<li>
+				<label>fantastic happy pill high</label>
+				<description>Vibin so mf hard on happy pills</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
