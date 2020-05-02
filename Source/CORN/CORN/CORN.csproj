@@ -49,11 +49,16 @@
   <ItemGroup>
     <Compile Include="Building_CultureChamber.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="HediffCompProperties_Dependent.cs" />
+    <Compile Include="HediffCompProperties_Immunisable.cs" />
+    <Compile Include="HediffComp_Dependent.cs" />
+    <Compile Include="HediffComp_Immunisable.cs" />
     <Compile Include="JobDriver_FillCultureChamber.cs" />
     <Compile Include="JobDriver_TakeCultureOutOfCultureChamber.cs" />
     <Compile Include="Logr.cs" />
     <Compile Include="MyDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipe_AddHediff.cs" />
     <Compile Include="WorkGiver_FillCultureChamber.cs" />
     <Compile Include="WorkGiver_TakeCultureOutOfCultureChamber.cs" />
   </ItemGroup>

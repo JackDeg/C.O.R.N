@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>/Defs/HediffDef[defName="WoundInfection"]/comps/li[@Class="HediffCompProperties_Immunizable"]</xpath>
+        <attribute>Class</attribute>
+        <value>HediffCompProperties_Immunisable</value>
+    </Operation>
+</Patch>

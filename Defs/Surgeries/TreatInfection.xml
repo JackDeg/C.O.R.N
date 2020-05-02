@@ -3,6 +3,7 @@
         <defName>TreatInfection</defName>
 		<label>treat infection</label>
 		<removesHediff>WoundInfection</removesHediff>
+		<addsHediff>TreatedInfection</addsHediff>
 		<description>Use antibiotics to treat an infected wound.</description>
 		<jobString>Treating {0}'s infection.</jobString>
 		<successfullyRemovedHediffMessage>{0} has successfully treated {1}'s infection.</successfullyRemovedHediffMessage>
@@ -10,17 +11,9 @@
 		<recipeUsers>
 			<li>Human</li>
 		</recipeUsers>
-		<workerClass>Recipe_RemoveHediff</workerClass>
+		<workerClass>CORN.Recipe_AddHediff</workerClass>
 		<workAmount>3000</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>MedicineUltratech</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -32,7 +25,6 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MedicineUltratech</li>
 				<li>Maizicillin</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -40,4 +32,25 @@
 			<Medicine>15</Medicine>
 		</skillRequirements>
 	</RecipeDef>
+
+	<HediffDef>
+		<defName>TreatedInfection</defName>
+		<label>treatedinfection</label>
+		<labelNoun>treatedinfection</labelNoun>
+		<description>Infection has been treated.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<isBad>false</isBad>
+		<initialSeverity>0.001</initialSeverity>
+		<comps>
+			<li Class="CORN.HediffCompProperties_Dependent">
+				<dependsOnHediff>WoundInfection</dependsOnHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

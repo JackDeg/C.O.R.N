@@ -15,6 +15,7 @@ namespace CORN
         public static ThingDef MouldyCultureMedium;
         public static JobDef FillCultureChamber;
         public static JobDef TakeCultureOutOfCultureChamber;
+        public static HediffDef TreatedInfection;
         static MyDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(MyDefOf));
