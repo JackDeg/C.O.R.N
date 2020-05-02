@@ -1,12 +1,14 @@
 <Defs>
+  <!--Corn Pill Recipies-->
   <RecipeDef>
-    <defName>MakeCornPill</defName>
-    <label>synthesise happy pill</label>
-    <description>Use advanced succ and blow procedures to turn into a phsycoactive drug</description>
-    <jobString>Succing on Angiosperms.</jobString>
+    <defName>MakeCCornPill</defName>
+    <label>synthesise crude happy pill</label>
+    <description>Use primitive fermenting techniques to produce a mood enhancing drug from corn</description>
+    <jobString>synthesising corny drugs.</jobString>
     <workAmount>450</workAmount>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>CornRefining</researchPrerequisite>
     <ingredients>
       <li>
         <filter>
@@ -14,15 +16,79 @@
             <li>RawCorn</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>5</count>
       </li>
     </ingredients>
     <products>
       <CrudeHappyPill>1</CrudeHappyPill>
-      <CornCob>2</CornCob>
+      <CornCob>5</CornCob>
     </products>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>MakeBCornPill</defName>
+    <label>synthesise basic happy pill</label>
+    <description>Use chemicals to purify this primitive drug.</description>
+    <jobString>Purifying crude pills.</jobString>
+    <workAmount>500</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>Tier2CornRefining</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CrudeHappyPill</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <BasicHappyPill>1</BasicHappyPill>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeACornPill</defName>
+    <label>synthesise advanced happy pill</label>
+    <description>Using the glitterworld mechanites from Luciferium you can remove the harmful toxins from your basic happy pills.</description>
+    <jobString>Purifying basic pills.</jobString>
+    <workAmount>700</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>Tier3CornRefining</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BasicHappyPill</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Luciferium</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AdvHappyPill>2</AdvHappyPill>
+    </products>
+  </RecipeDef>
+  <!--Other recipies-->
   <RecipeDef>
     <defName>MakeCornPaste</defName>
     <label>macerate cobs</label>

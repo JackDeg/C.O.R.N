@@ -18,7 +18,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>3</MarketValue>
+			<MarketValue>24</MarketValue>
 			<Mass>0.1</Mass>
 			<DeteriorationRate>4</DeteriorationRate>
 		</statBases>

@@ -4,7 +4,7 @@
     <label>corn cob</label>
     <description>The cob of an ear of corn. Why is the corn gone?</description>
     <graphicData>
-      <texPath>Things/Items</texPath>
+      <texPath>Things/Items/Cob</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>

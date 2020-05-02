@@ -8,8 +8,8 @@
   <!-- Research projects -->
   <ResearchProjectDef>
     <defName>CornRefining</defName>
-    <label>Basic Corn Refining</label>
-    <description>Scientists have discovered the very basics of corn based drugs</description>
+    <label>Crude Corn Refining</label>
+    <description>Uncover the very basics of maizine based drugs</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -22,8 +22,8 @@
 
   <ResearchProjectDef>
     <defName>Tier2CornRefining</defName>
-    <label>Advanced Corn Refining</label>
-    <description>Scientists have discovered that combining various drugs with corn will produce wondrous improvements on the drug</description>
+    <label>Basic Corn Refining</label>
+    <description>Purify crude drugs with chemicals</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -35,9 +35,23 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>Tier3CornRefining</defName>
+    <label>Advanced Corn Refining</label>
+    <description>Repurpose the advanced mechanites in luciferium to clean the maizine.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Tier2CornRefining</li>
+    </prerequisites>
+    <tab>CornRTab</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>CobCompression</defName>
     <label>Corncob Compression</label>
-    <description>Your colonists have figured out how to compress corn cobs into a biological building material. However, it's not very strong.</description>
+    <description>Compress left over corn cobs into a weak biological building material.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -51,7 +65,7 @@
   <ResearchProjectDef>
     <defName>T2CobCompression</defName>
     <label>Corncob Compound</label>
-    <description>Your colonists have figured out how to combine corn and steel to make a much stronger building material.</description>
+    <description>Combine corn and steel to make a much stronger building material.</description>
     <baseCost>2500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
