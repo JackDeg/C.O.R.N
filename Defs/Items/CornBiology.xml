@@ -73,7 +73,7 @@
     <description>A chamber for cultivating nasty things on jelly.</description>
     <thingClass>Building_CultureChamber</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/FermentingBarrel</texPath>
+      <texPath>Things/Buildings/CultureChamber</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <damageData>
         <rect>(0.05,0.1,0.9,0.9)</rect>
