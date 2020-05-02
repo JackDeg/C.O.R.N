@@ -1,0 +1,68 @@
+<Defs>
+    <!--Project Maizicillin-->
+    <ThingDef ParentName="ResourceBase">
+		<defName>CornCultureMedium</defName>
+		<label>culture medium</label>
+		<description>A corn based culture medium for producing maizicillium mould.</description>
+		<graphicData>
+			<texPath>Things/Items/CultureMedium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>700</WorkToMake>
+		</statBases>
+		<costList>
+			<Sweetcorn>2</Sweetcorn>
+			<Neutroamine>1</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableCornProduction</li>
+			</recipeUsers>
+			<researchPrerequisite>Tier2CornRefining</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>7</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+		<defName>MouldyCultureMedium</defName>
+		<label>maizicillium culture</label>
+		<description>A successful maizicillium culture. You could extract valuable maizicillin from this.</description>
+		<graphicData>
+			<texPath>Things/Items/CultureMould</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+		<defName>Maizicillin</defName>
+		<label>maizicillin</label>
+		<description>Antibiotics. A poweful tool in any hospital's arsenal.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/Penoxycyline</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+</Defs>

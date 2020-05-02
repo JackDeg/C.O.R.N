@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="MedicineBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Cornoxyamine</defName>
 		<label>cornoxyamine</label>
 		<description>An advanced precursor required for various corn based neurosurgeries</description>

@@ -1,0 +1,43 @@
+<Defs>
+	<RecipeDef ParentName="SurgeryFlesh">
+        <defName>TreatInfection</defName>
+		<label>treat infection</label>
+		<removesHediff>WoundInfection</removesHediff>
+		<description>Use antibiotics to treat an infected wound.</description>
+		<jobString>Treating {0}'s infection.</jobString>
+		<successfullyRemovedHediffMessage>{0} has successfully treated {1}'s infection.</successfullyRemovedHediffMessage>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Maizicillin</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+				<li>Maizicillin</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>
