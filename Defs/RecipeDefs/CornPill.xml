@@ -166,9 +166,37 @@
     </ingredients>
     <products>
       <CornCob>1</CornCob>
+      <Sweetcorn>1</Sweetcorn>
     </products>
     <recipeUsers>
       <li>ButcherSpot</li>
+      <li>TableButcher</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>BulkStripCorn</defName>
+    <label>strip corn x5</label>
+    <description>Strip the cob of its corn. In the bulky way.</description>
+    <jobString>stripping.</jobString>
+    <workAmount>160</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>CobCompression</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <CornCob>5</CornCob>
+      <Sweetcorn>5</Sweetcorn>
+    </products>
+    <recipeUsers>
       <li>TableButcher</li>
     </recipeUsers>
   </RecipeDef>

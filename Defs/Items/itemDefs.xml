@@ -110,5 +110,30 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-  </ThingDef>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+      <defName>Sweetcorn</defName>
+      <label>sweet corn</label>
+      <description>The nobbly bits of a corn cob. Actually quite nice on their own.</description>
+      <soundInteract>Grain_Drop</soundInteract>
+      <soundDrop>Grain_Drop</soundDrop>
+      <graphicData>
+        <texPath>Things/Items/sweetcorn</texPath>
+      </graphicData>
+      <statBases>
+        <MarketValue>1.0</MarketValue>
+      </statBases>
+      <ingestible>
+        <foodType>VegetableOrFruit</foodType>
+        <preferability>RawTasty</preferability>
+        <tasteThought></tasteThought>
+      </ingestible>
+      <comps>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>50</daysToRotStart>
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+    </ThingDef>
 </Defs>
