@@ -1,0 +1,56 @@
+<Defs>
+    <HediffDef Name="CORNParts" Abstract="True">
+		<hediffClass>Hediff_Implant</hediffClass>
+		<defaultLabelColor>(244,210,131)</defaultLabelColor>
+		<isBad>false</isBad>
+	</HediffDef>
+
+    <!--Agricultural Mind Hediff and surgery-->
+    <HediffDef ParentName="CORNParts">
+		<defName>AgriculturalMind</defName>
+		<label>agricultural mind</label>
+		<description>Replace the dark, violent centres of the brain with a caring plant-based AI.\nImproves growing at the cost of one's violent nature.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<PlantWorkSpeed>+1.00</PlantWorkSpeed>
+					<PlantHarvestYield>+1.00</PlantHarvestYield>
+				</statOffsets>
+                <statFactors>
+                    <MoveSpeed>1.5</MoveSpeed>
+                </statFactors>
+                <disabledWorkTags>Violent</disabledWorkTags>
+			</li>
+		</stages>
+		<tags>
+			<li>AuxiliaryAI_Worker</li>
+		</tags>
+	</HediffDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>MakeGreenthumb</defName>
+        <label>give agricultural mind</label>
+        <description>Replace someone's violent nature with a love for plants.</description>
+        <jobString>Modifying the mind.</jobString>
+        <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AgriculturalMind</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AgriculturalMind</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AgriculturalMind</addsHediff>
+    </RecipeDef>
+</Defs>

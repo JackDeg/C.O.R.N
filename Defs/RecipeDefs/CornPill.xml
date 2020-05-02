@@ -18,7 +18,7 @@
       </li>
     </ingredients>
     <products>
-      <HappyPill>1</HappyPill>
+      <CrudeHappyPill>1</CrudeHappyPill>
       <CornCob>2</CornCob>
     </products>
   </RecipeDef>
@@ -82,7 +82,7 @@
   <RecipeDef>
     <defName>StripCorn</defName>
     <label>strip corn</label>
-    <description>Strip the cob of its corn. In the sexy way.</description>
+    <description>Strip the cob of its corn. In the spicy way.</description>
     <jobString>stripping.</jobString>
     <workAmount>40</workAmount>
     <effectWorking>Cook</effectWorking>

@@ -1,0 +1,55 @@
+<Defs>
+	<ThingDef ParentName="MedicineBase">
+		<defName>Cornoxyamine</defName>
+		<label>cornoxyamine</label>
+		<description>An advanced precursor required for various corn based neurosurgeries</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Neutroamine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+			<color>0.75,0.70,0</color>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>18</MarketValue>
+			<Mass>0.50</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>700</WorkToMake>
+		</statBases>
+		<costList>
+			<Penoxycyline>2</Penoxycyline>
+			<RawCorn>5</RawCorn>
+			<Neutroamine>3</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableCornProduction</li>
+			</recipeUsers>
+			<researchPrerequisite>MedicineProduction</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+				<Intellectual>5</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+    
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>AgriculturalMind</defName>
+		<label>agricultural mind</label>
+		<description>An advanced brain implant that improves the agricultural prowess of the user.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>MakeGreenthumb</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Cornoxyamine>3</Cornoxyamine>
+            <Gold>20</Gold>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>
