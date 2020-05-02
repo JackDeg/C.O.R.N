@@ -11,7 +11,7 @@ namespace CORN
     {
         static CornMod()
         {
-            Logr.Info("Hello World!");
+            Logr.Info("C.O.R.N loaded.");
         }
     }
 }
