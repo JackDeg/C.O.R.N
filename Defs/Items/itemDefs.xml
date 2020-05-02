@@ -25,7 +25,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>CornCobPaste</defName>
     <label>Corn Cob Paste</label>
-    <description>Paste made of left over corn cobs. Great for quick, temporary buildings!</description>
+    <description>Paste made of left over corn cobs. Great for quick, temporary buildings</description>
     <graphicData>
       <texPath>Things/Items/CornPaste</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -70,7 +70,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>CornCompound</defName>
     <label>Corn Compound</label>
-    <description>Compound made of left over corn cobs and steel. Great for building semi-strong structures!</description>
+    <description>Compound made of left over corn cobs and steel. Great for building semi-strong structures</description>
     <graphicData>
       <texPath>Things/Items/CornCompound</texPath>
       <graphicClass>Graphic_Single</graphicClass>

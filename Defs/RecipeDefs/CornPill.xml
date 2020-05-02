@@ -2,7 +2,7 @@
   <RecipeDef>
     <defName>MakeCornPill</defName>
     <label>synthesise happy pill</label>
-    <description>Use advanced succ and blow procedures to turn into a phsycoactive drug!</description>
+    <description>Use advanced succ and blow procedures to turn into a phsycoactive drug</description>
     <jobString>Succing on Angiosperms.</jobString>
     <workAmount>450</workAmount>
     <effectWorking>Cook</effectWorking>
@@ -26,7 +26,7 @@
   <RecipeDef>
     <defName>MakeCornPaste</defName>
     <label>macerate cobs</label>
-    <description>Using various pestle and mortar techniques, you can create a corn cob paste!</description>
+    <description>Using various pestle and mortar techniques, you can create a corn cob paste</description>
     <jobString>macerating cobs.</jobString>
     <workAmount>1000</workAmount>
     <effectWorking>Cook</effectWorking>
@@ -50,7 +50,7 @@
   <RecipeDef>
     <defName>MakeCornCompound</defName>
     <label>combine cobs</label>
-    <description>Using highly advanced pestle and mortar techniques, you can create a steel-cob compound!</description>
+    <description>Using highly advanced pestle and mortar techniques, you can create a steel-cob compound</description>
     <jobString>combining cobs.</jobString>
     <workAmount>1000</workAmount>
     <effectWorking>Cook</effectWorking>
