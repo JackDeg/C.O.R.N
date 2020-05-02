@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <ContainsCulture>Contains {0} / {1} dishes.</ContainsCulture>
+    <ContainsMould>Contains {0} / {1} mouldy cultures.</ContainsMould>
+    <Mouldy>Mouldy</Mouldy>
+    <CultureChamberOutOfIdealTemperature>Non-ideal temperature. Growth speed: {0}</CultureChamberOutOfIdealTemperature>
+    <IdealChamberTemperature>Ideal growth temperature</IdealChamberTemperature>
+</LanguageData>

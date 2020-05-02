@@ -17,9 +17,9 @@ public class Building_CultureChamber : Building
 
 	public const int MaxCapacity = 5;
 
-	private const int BaseFermentationDuration = 360000;
+	private const int BaseFermentationDuration = 60000;
 
-	public const float MinIdealTemperature = 21f;
+	public const float MinIdealTemperature = 20f;
 
 	private static readonly Vector2 BarSize = new Vector2(0.55f, 0.1f);
 
@@ -93,9 +93,9 @@ public class Building_CultureChamber : Building
 			{
 				return 0.1f;
 			}
-			if (ambientTemperature < 7f)
+			if (ambientTemperature < 20f)
 			{
-				return GenMath.LerpDouble(compProperties.minSafeTemperature, 7f, 0.1f, 1f, ambientTemperature);
+				return GenMath.LerpDouble(compProperties.minSafeTemperature, 20f, 0.1f, 1f, ambientTemperature);
 			}
 			return 1f;
 		}
@@ -174,30 +174,30 @@ public class Building_CultureChamber : Building
 		{
 			if(Mouldy)
 			{
-				stringBuilder.AppendLine("ContainsBeer".Translate(cultureCount, 5));
+				stringBuilder.AppendLine("ContainsMould".Translate(cultureCount, 5));
 			}
 			else
 			{
-				stringBuilder.AppendLine("ContainsWort".Translate(cultureCount, 5));
+				stringBuilder.AppendLine("ContainsCulture".Translate(cultureCount, 5));
 			}
 		}
 		if (!Empty)
 		{
 			if (Mouldy)
 			{
-				stringBuilder.AppendLine("Fermented".Translate());
+				stringBuilder.AppendLine("Mouldy".Translate());
 			}
 			else
 			{
 				stringBuilder.AppendLine("FermentationProgress".Translate(Progress.ToStringPercent(), EstimatedTicksLeft.ToStringTicksToPeriod()));
 				if (CurrentTempProgressSpeedFactor != 1f)
 				{
-					stringBuilder.AppendLine("FermentationBarrelOutOfIdealTemperature".Translate(CurrentTempProgressSpeedFactor.ToStringPercent()));
+					stringBuilder.AppendLine("CultureChamberOutOfIdealTemperature".Translate(CurrentTempProgressSpeedFactor.ToStringPercent()));
 				}
 			}
 		}
 		stringBuilder.AppendLine("Temperature".Translate() + ": " + base.AmbientTemperature.ToStringTemperature("F0"));
-		stringBuilder.AppendLine("IdealFermentingTemperature".Translate() + ": " + 7f.ToStringTemperature("F0") + " ~ " + comp.Props.maxSafeTemperature.ToStringTemperature("F0"));
+		stringBuilder.AppendLine("IdealChamberTemperature".Translate() + ": " + 20f.ToStringTemperature("F0") + " ~ " + comp.Props.maxSafeTemperature.ToStringTemperature("F0"));
 		return stringBuilder.ToString().TrimEndNewlines();
 	}
 
@@ -225,7 +225,7 @@ public class Building_CultureChamber : Building
 			GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
 			r.center = drawPos;
 			r.size = BarSize;
-			r.fillPercent = (float)cultureCount / 25f;
+			r.fillPercent = (float)cultureCount / 5f;
 			r.filledMat = BarFilledMat;
 			r.unfilledMat = BarUnfilledMat;
 			r.margin = 0.1f;
