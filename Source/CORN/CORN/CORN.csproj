@@ -42,15 +42,20 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building_CultureChamber.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="JobDriver_FillCultureChamber.cs" />
+    <Compile Include="JobDriver_TakeCultureOutOfCultureChamber.cs" />
     <Compile Include="Logr.cs" />
+    <Compile Include="MyDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGiver_FillCultureChamber.cs" />
+    <Compile Include="WorkGiver_TakeCultureOutOfCultureChamber.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

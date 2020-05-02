@@ -1,11 +1,11 @@
 <Defs>
   <WorkGiverDef>
-    <defName>MakeCornPills</defName>
+    <defName>DoBillsCornTable</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
-    <label>Happy Pill Synthesis</label>
+    <label>work at corn table</label>
     <workType>Crafting</workType>
-    <verb>Synthesise</verb>
-    <gerund>utilising</gerund>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
@@ -15,32 +15,43 @@
   </WorkGiverDef>
 
   <WorkGiverDef>
-    <defName>MakeCornPaste</defName>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <label>macerate cobs</label>
-    <workType>Crafting</workType>
-    <verb>Macerate</verb>
-    <gerund>macerating</gerund>
+    <defName>TakeCultureOutOfCultureChamber</defName>
+    <label>take cultures out of the culture chamber</label>
+    <giverClass>WorkGiver_TakeCultureOutOfCultureChamber</giverClass>
+    <workType>Hauling</workType>
+    <verb>take cultures</verb>
+    <gerund>taking cultures from</gerund>
+    <priorityInType>20</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-    <fixedBillGiverDefs>
-      <li>TableCornProduction</li>
-    </fixedBillGiverDefs>
   </WorkGiverDef>
-
+  
   <WorkGiverDef>
-    <defName>MakeCornCompound</defName>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <label>combine cobs</label>
-    <workType>Crafting</workType>
-    <verb>Compound</verb>
-    <gerund>Compounding</gerund>
+    <defName>FillCultureChamber</defName>
+    <label>fill culture chamber</label>
+    <giverClass>WorkGiver_FillCultureChamber</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>19</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-    <fixedBillGiverDefs>
-      <li>TableCornProduction</li>
-    </fixedBillGiverDefs>
   </WorkGiverDef>
+  
+  <JobDef>
+    <defName>FillCultureChamber</defName>
+    <driverClass>JobDriver_FillCultureChamber</driverClass>
+    <reportString>filling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>TakeCultureOutOfCultureChamber</defName>
+    <driverClass>JobDriver_TakeCultureOutOfCultureChamber</driverClass>
+    <reportString>taking cultures out of TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 </Defs>

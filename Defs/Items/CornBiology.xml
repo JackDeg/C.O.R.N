@@ -65,4 +65,54 @@
 			<DeteriorationRate>2</DeteriorationRate>
 		</statBases>
 	</ThingDef>
+
+    <!--BioBuildings-->
+    <ThingDef ParentName="BuildingBase">
+    <defName>CultureChamber</defName>
+    <label>culture chamber</label>
+    <description>A chamber for cultivating nasty things on jelly.</description>
+    <thingClass>Building_CultureChamber</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/FermentingBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>20</minSafeTemperature>
+        <maxSafeTemperature>32</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+      </li>
+    </comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>Tier2CornRefining</li>
+    </researchPrerequisites>
+  </ThingDef>
 </Defs>

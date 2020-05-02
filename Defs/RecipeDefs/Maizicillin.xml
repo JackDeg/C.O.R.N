@@ -1,0 +1,25 @@
+<Defs>
+    <RecipeDef>
+        <defName>MakeMaizicillin</defName>
+        <label>extract maizicillin</label>
+        <description>Extract maizicillin from cultures</description>
+        <jobString>extracting antibiotics.</jobString>
+        <workAmount>250</workAmount>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <researchPrerequisite>CornRefining</researchPrerequisite>
+        <ingredients>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>MouldyCultureMedium</li>
+            </thingDefs>
+            </filter>
+            <count>5</count>
+        </li>
+        </ingredients>
+        <products>
+        <Maizicillin>5</Maizicillin>
+        </products>
+  </RecipeDef>
+</Defs>

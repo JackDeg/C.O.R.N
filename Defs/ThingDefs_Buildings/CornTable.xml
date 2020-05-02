@@ -69,6 +69,7 @@
       <li>MakeACornPill</li>
       <li>MakeCornPaste</li>
       <li>MakeCornCompound</li>
+      <li>MakeMaizicillin</li>
     </recipes>
   </ThingDef>
 </Defs>
